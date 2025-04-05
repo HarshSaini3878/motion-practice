@@ -20,7 +20,7 @@ const CursorFollower = () => {
 
   return (
     <motion.div
-      className='w-8 h-8 bg-black rounded-full fixed top-0 left-0 pointer-events-none z-50'
+      className='w-8 h-8 bg-black/45 rounded-full fixed top-0 left-0 pointer-events-none z-50'
       style={{ x: smoothX, y: smoothY }}
     />
   );
