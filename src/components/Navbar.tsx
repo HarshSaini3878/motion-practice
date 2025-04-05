@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'motion/react';
+import ScrollProgress from './scrollprogress';
 
 const navbar = [
   { title: 'Home', link: '/' },
@@ -14,7 +15,8 @@ const Navbar = () => {
   const [active, setActive] = useState('Home');
 
   return (
-    <div className='w-screen h-screen relative flex items-center justify-center'>
+    <div className='w-screen h-[150vh] relative flex items-center justify-center'>
+        <ScrollProgress/>
       <div className='fixed bottom-4 left-1/2 -translate-x-1/2 flex border-2 border-amber-300 rounded-2xl md:rounded-3xl bg-white/70 backdrop-blur-md shadow-xl z-50 px-3 py-2 md:px-6 md:py-3 space-x-1 md:space-x-4 overflow-x-auto max-w-[95%]'>
         {navbar.map((navitem) => (
           <div
